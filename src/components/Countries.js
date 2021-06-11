@@ -17,7 +17,7 @@ const Countries = () => {
            if (playOnce) {
                 axios
                 .get(
-                    'http://restcountries.eu/rest/v2/all?field=name;population;region;capital;flag'
+                    'https://restcountries.eu/rest/v2/all?field=name;population;region;capital;flag'
                     )
                 .then((res) => {
                 setData(res.data);
